@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Maurader's Map</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.css' rel='stylesheet' />
+
+  <style type="text/css">
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 70%;
+    }
+    #text{
+      position: absolute;
+      top: 30;
+      bottom: 30;
+      left: 70%;
+      width: 30%;
+    }
+    h4{
+
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+
+  <div id="text">
+    <h2>Testing</h2>
+
+    <h4>Created by Katrina Duong, Angel Jimenez, & Arthur Fan</h4>
+  </div>
+  <script src="https://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.js"></script>
+  <script src="https://cdn.firebase.com/js/client/2.2.3/firebase.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.7.0/lodash.min.js"></script>
+  <script src="./config.js"></script>
+  <script src="./app.js"></script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', config.analytics, 'auto');
+    ga('send', 'pageview');
+
+    var username
+    username = prompt("Enter Codename");
+  </script>
+</body>
+</html>
